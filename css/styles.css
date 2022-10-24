@@ -14,26 +14,24 @@ main{
     padding: 10px;
 }
 
-@media (min-width: 1200px) {
-    .container{
-        width: 1024px;
-        background-color: #d4e9e7;
-    }
+.container{
+    width: 1024px;
+    background-color: #d4e9e7;
+}
 
-    h1{
-        font-size: 64px;
-    }
-    h2{
-        font-size: 35px;
-        margin-bottom: 0.35em;
-    }
-    h3{
-        font-size: 29px;
-        margin-bottom: 0.35em;
-    }
-    p{
-        font-size: 16px;
-    }
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 35px;
+    margin-bottom: 0.35em;
+}
+h3{
+    font-size: 29px;
+    margin-bottom: 0.35em;
+}
+p{
+    font-size: 16px;
 }
 
 @media (max-width: 767px){ 
@@ -58,7 +56,7 @@ main{
     }
 }
 
-@media (max-width: 1199px){
+@media (max-width: 991px){
     .container{
         width: 100%;
         background-color: #d4e9e7;
