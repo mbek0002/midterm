@@ -3,7 +3,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf; /* Adds background color */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Displays body content to the center */
     font-size: 16px;
     line-height: 1.4;
     margin: 0;
@@ -19,34 +19,78 @@ main{
         width: 1024px;
         background-color: #d4e9e7;
     }
+
+    h1{
+        font-size: 64px;
+    }
+    h2{
+        font-size: 35px;
+        margin-bottom: 0.35em;
+    }
+    h3{
+        font-size: 29px;
+        margin-bottom: 0.35em;
+    }
+    p{
+        font-size: 16px;
+    }
 }
 
+@media (max-width: 767px){ 
+    /* Small screen reponsiveness */
+    .container{
+        width: 100%;
+        background-color: #d4e9e7;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 28px;
+        margin-bottom: 0.35em;
+    }
+    h3{
+        font-size: 20px;
+        margin-bottom: 0.35em;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1199px){
+    .container{
+        width: 100%;
+        background-color: #d4e9e7;
+    }
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 35px;
+        margin-bottom: 0.35em;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 0.35em;
+    }
+    p{
+        font-size: 16px;
+    }
+}
 
 h1,h2,h3{
     font-weight: normal;
 }
-h1{
-    font-size: 64px;
-}
-h2{
-    font-size: 35px;
-    margin-bottom: 0.35em;
-}
-h3{
-    font-size: 29px;
-    margin-bottom: 0.35em;
-}
-p{
-    font-size: 16px;
-}
+
 /* HEADER STYLES */
 .header-img{
     background: url('../images/lone-starfish-wide.jpg') center no-repeat; /* Adds background image to header */
     background-size: cover; /* Image fits full size */
     height: 300px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: center; /* Displays content horizontally to the center */
+    align-items: flex-end; /* Aligns content vertically to the bottom */
     padding: 20px 10px; /* Adds  padding */
     color: white; /* Text color white */
 }
@@ -73,6 +117,42 @@ nav a:nth-child(even){
     border-right: 1px solid; /* Adds border to the right */
 }
 
+@media(max-width: 767px){
+    /* Small screen reponsiveness */
+    nav a{
+        font-size: 16px;
+        text-decoration: none;
+        padding: 2px 0 ;
+        margin-top: 2px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav a:nth-child(even){
+        padding: 0 6%;
+    }
+}
+
+@media(max-width: 991px){
+    /* Medium screen reponsiveness */
+    nav a{
+        font-size: 18px;
+        text-decoration: none;
+        padding: 2px 0 ;
+        margin-top: 2px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav a:nth-child(even){
+        padding: 0 10%;
+    }
+}
+
 nav a:hover{
     text-decoration: underline; /* Adds horizontal line on hover */
 }
@@ -86,6 +166,14 @@ nav a:hover{
     margin: 0 20px 20px 0;
 }
 
+@media(max-width: 767px){
+    /* Small screen reponsiveness */
+    .img-wrapper{
+        height: 200px;
+        width: 200px;
+        margin: 0 10px 10px 0;
+    }
+}
 .img-wrapper img{
     height: 100%; /* Full image height */
     width: auto; /* Fits width accordingly */
@@ -115,6 +203,14 @@ input[type=text], input[type=email], textarea {
     margin: 0.4em auto;
 }
 
+@media(max-width: 767px){
+    /* Small screen reponsiveness */
+    .radio-text{
+        font-size: 18px;
+        margin: 0.4em auto;
+    }
+}
+
 .submit-btn{
     background-color: transparent;
     color: black;
@@ -130,5 +226,5 @@ input[type=text], input[type=email], textarea {
 footer{
     padding: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: end; /* displays footer on the  right */
 }
